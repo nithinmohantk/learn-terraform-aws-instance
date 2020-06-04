@@ -32,3 +32,8 @@ Terraform will attempt when it comes to provision the infrastructure according t
 
 Execute the plan by running terraform apply:
 ```terraform apply -var-file="definitions.tfvars"```
+
+```terraform apply -var 'amis={ us-east-1 = "foo", us-west-2 = "bar" }'    ```
+```terraform apply -var region=us-west-2```
+
+
