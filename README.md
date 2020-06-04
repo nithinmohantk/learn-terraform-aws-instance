@@ -5,7 +5,8 @@
 
 ## Getting Started 
 
-
+### Download Terraform 
+https://www.terraform.io/downloads.html
 
 
 ### Useful Commands
@@ -23,3 +24,11 @@
 
 ```terraform state list```
 
+Command to test the validity of your configuration:
+```terraform validate```
+
+Terraform will attempt when it comes to provision the infrastructure according to your configuration:
+```terraform plan -var-file="definitions.tfvars"```
+
+Execute the plan by running terraform apply:
+```terraform apply -var-file="definitions.tfvars"```
